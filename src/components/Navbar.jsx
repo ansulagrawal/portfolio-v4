@@ -1,7 +1,13 @@
 import { FULL_NAME, navIcons, navLinks } from "@constants";
+import useWindowStore from "@store/window";
 import dayjs from "dayjs";
 
 const Navbar = () => {
+  const { openWindow } = useWindowStore();
+
+  const toggleWindow = (type) => {
+    openWindow(type);
+  };
   return (
     <nav>
       <div>
@@ -10,7 +16,7 @@ const Navbar = () => {
 
         <ul>
           {navLinks.map((link) => (
-            <li key={link.id}>
+            <li key={link.id} onClick={() => toggleWindow(link.type)}>
               <p>{link.name}</p>
             </li>
           ))}

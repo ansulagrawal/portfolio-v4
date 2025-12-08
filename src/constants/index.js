@@ -129,14 +129,32 @@ const WINDOW_CONFIG = {
   imgFile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
 };
 
+const blogPosts = [
+  {
+    id: 1,
+    date: "Aug 1, 2025",
+    title: "What is TypeScript?",
+    image: "/images/blog1.png",
+    link: "https://google.com",
+  },
+  {
+    id: 2,
+    date: "Sep 1, 2025",
+    title: "Master web development",
+    image: "/images/blog2.png",
+    link: "https://google.com",
+  },
+];
+
 export {
-  FULL_NAME,
-  SHORT_NAME,
-  navLinks,
-  navIcons,
+  blogPosts,
   dockApps,
-  techStack,
-  TECH_STACK_MOCK_RENDER_TIME,
+  FULL_NAME,
   INITIAL_Z_INDEX,
-  WINDOW_CONFIG,
+  navIcons,
+  navLinks,
+  SHORT_NAME,
+  TECH_STACK_MOCK_RENDER_TIME,
+  techStack,
+  WINDOW_CONFIG
 };
