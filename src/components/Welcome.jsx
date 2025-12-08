@@ -60,6 +60,13 @@ const setupTextHover = (container, type) => {
   };
 };
 
+/**
+ * Render the welcome section with animated, per-letter title and subtitle.
+ *
+ * Initializes GSAP-based hover animations for the title and subtitle elements
+ * so each character responds to pointer movement by adjusting its font weight.
+ * @returns {JSX.Element} The rendered welcome section element.
+ */
 function Welcome() {
   const titleRef = useRef(null);
   const subtitleRef = useRef(null);
