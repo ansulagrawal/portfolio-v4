@@ -54,18 +54,17 @@ function Dock() {
   }, []);
 
   function toggleApp(app) {
-    console.log(windows[app.id], app);
-
     if (!app.canOpen) return;
 
-    const window = windows[app.id];
+    const win = windows[app.id];
 
-    if (!window) {
+    if (!win) {
       console.error(`Window not found for app: ${app.id}`);
       return;
     }
 
-    if (window.isOpen) {
+    if (win.isOpen) {
+      // Todo: Bring front if its back else close it
       closeWindow(app.id);
     } else {
       openWindow(app.id);

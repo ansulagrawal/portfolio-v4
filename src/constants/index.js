@@ -96,5 +96,12 @@ const WINDOW_CONFIG = {
   imgFile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
 };
 
-export { navLinks, navIcons, dockApps };
-export { FULL_NAME, SHORT_NAME, INITIAL_Z_INDEX, WINDOW_CONFIG };
+export {
+  FULL_NAME,
+  SHORT_NAME,
+  navLinks,
+  navIcons,
+  dockApps,
+  INITIAL_Z_INDEX,
+  WINDOW_CONFIG,
+};
