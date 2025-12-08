@@ -56,7 +56,7 @@ function Dock() {
   return (
     <section id="dock">
       <div className="dock-container" ref={dockRef}>
-        {dockApps.map(({ id, name, icon, canOpen }) => (
+        {dockApps.map(({ id, name, icon, canOpen, alt }) => (
           <div key={id} className="relative flex justify-center">
             <button
               type="button"
@@ -69,7 +69,7 @@ function Dock() {
             >
               <img
                 src={`/images/${icon}`}
-                alt={icon}
+                alt={alt}
                 loading="lazy"
                 className={canOpen ? "" : "opacity-60"}
               />
