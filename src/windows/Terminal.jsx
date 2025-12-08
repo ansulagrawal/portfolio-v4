@@ -3,7 +3,7 @@ import { Check, Flag } from "lucide-react";
 import WindowControls from "@components/WindowControls";
 import WindowWrapper from "@hoc/WindowWrapper";
 
-import { SHORT_NAME, TECH_STACK_RENDER_TIME, techStack } from "@constants";
+import { SHORT_NAME, TECH_STACK_MOCK_RENDER_TIME, techStack } from "@constants";
 
 function Terminal() {
   return (
@@ -50,7 +50,7 @@ function Terminal() {
 
           <p className="text-black">
             <Flag size={20} fill="black" />
-            Render time: {TECH_STACK_RENDER_TIME}ms
+            Render time: {TECH_STACK_MOCK_RENDER_TIME}ms
           </p>
         </div>
       </div>

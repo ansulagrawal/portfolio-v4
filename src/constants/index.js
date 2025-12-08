@@ -114,7 +114,7 @@ const techStack = [
   },
 ];
 
-const TECH_STACK_RENDER_TIME = 7;
+const TECH_STACK_MOCK_RENDER_TIME = 7;
 
 const INITIAL_Z_INDEX = 1000;
 
@@ -136,7 +136,7 @@ export {
   navIcons,
   dockApps,
   techStack,
-  TECH_STACK_RENDER_TIME,
+  TECH_STACK_MOCK_RENDER_TIME,
   INITIAL_Z_INDEX,
   WINDOW_CONFIG,
 };
