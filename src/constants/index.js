@@ -83,6 +83,39 @@ const dockApps = [
   },
 ];
 
+const techStack = [
+  {
+    category: "Frontend",
+    items: ["React.js", "Next.js", "TypeScript"],
+  },
+  {
+    category: "Mobile",
+    items: ["React Native"],
+  },
+  {
+    category: "Styling",
+    items: ["Tailwind CSS", "Sass", "CSS"],
+  },
+  {
+    category: "Backend",
+    items: ["Node.js", "Express", "Hapi.js"],
+  },
+  {
+    category: "Database",
+    items: ["MySQL", "PostgreSQL", "MongoDB"],
+  },
+  {
+    category: "Devops",
+    items: ["CI/CD", "Bitbucket pipelines", "AWS", "Azure"],
+  },
+  {
+    category: "Dev Tools",
+    items: ["Git", "GitHub", "Docker"],
+  },
+];
+
+const TECH_STACK_RENDER_TIME = 7;
+
 const INITIAL_Z_INDEX = 1000;
 
 const WINDOW_CONFIG = {
@@ -102,6 +135,8 @@ export {
   navLinks,
   navIcons,
   dockApps,
+  techStack,
+  TECH_STACK_RENDER_TIME,
   INITIAL_Z_INDEX,
   WINDOW_CONFIG,
 };
