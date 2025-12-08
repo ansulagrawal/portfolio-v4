@@ -83,6 +83,25 @@ const dockApps = [
   },
 ];
 
-export { FULL_NAME, SHORT_NAME };
+const INITIAL_Z_INDEX = 1000;
 
-export { navLinks, navIcons, dockApps };
+const WINDOW_CONFIG = {
+  finder: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+  contact: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+  resume: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+  safari: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+  photos: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+  terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+  txtFile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+  imgFile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+};
+
+export {
+  FULL_NAME,
+  SHORT_NAME,
+  navLinks,
+  navIcons,
+  dockApps,
+  INITIAL_Z_INDEX,
+  WINDOW_CONFIG,
+};

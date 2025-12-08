@@ -1,13 +1,13 @@
 import { dockApps } from "@constants";
 import { useGSAP } from "@gsap/react";
+import useWindowStore from "@store/window";
 import gsap from "gsap";
 import { useRef } from "react";
 import { Tooltip } from "react-tooltip";
 
-function toggleApp() {}
-
 function Dock() {
   const dockRef = useRef(null);
+  const { openWindow, closeWindow, windows } = useWindowStore();
 
   useGSAP(() => {
     const dock = dockRef.current;
@@ -53,6 +53,24 @@ function Dock() {
     };
   }, []);
 
+  function toggleApp(app) {
+    if (!app.canOpen) return;
+
+    const win = windows[app.id];
+
+    if (!win) {
+      console.error(`Window not found for app: ${app.id}`);
+      return;
+    }
+
+    if (win.isOpen) {
+      // Todo: Bring front if its back else close it
+      closeWindow(app.id);
+    } else {
+      openWindow(app.id);
+    }
+  }
+
   return (
     <section id="dock">
       <div className="dock-container" ref={dockRef}>
@@ -65,7 +83,7 @@ function Dock() {
               data-tooltip-id="dock-tooltip"
               data-tooltip-content={name}
               disabled={!canOpen}
-              onClick={() => toggleApp(name)}
+              onClick={() => toggleApp({ id, canOpen })}
             >
               <img
                 src={`/images/${icon}`}
