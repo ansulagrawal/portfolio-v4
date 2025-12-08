@@ -85,7 +85,7 @@ function Welcome() {
       </p>
       <h1 className="mt-7" ref={titleRef}>
         {renderText(
-          "Portfolio",
+          "Portfolio.",
           "max-sm:text-7xl text-9xl italic font-georama"
         )}
       </h1>
