@@ -1,5 +1,4 @@
 import useWindowStore from "@store/window";
-import { Circle } from "lucide-react";
 
 function WindowControls({ target }) {
   const { closeWindow } = useWindowStore();
