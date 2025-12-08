@@ -24,7 +24,7 @@ const renderText = (text, className, baseWeight = 400) => {
 };
 
 const setupTextHover = (container, type) => {
-  if (!container) return;
+  if (!container) return () => {};
 
   const letters = container.querySelectorAll("span");
 
@@ -89,6 +89,10 @@ function Welcome() {
           "max-sm:text-7xl text-9xl italic font-georama"
         )}
       </h1>
+
+      <div className="small-screen">
+        <p>This Portfolio is designed for desktop/tablet screen only</p>
+      </div>
     </section>
   );
 }
