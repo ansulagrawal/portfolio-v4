@@ -140,7 +140,7 @@ const blogPosts = [
 ];
 
 const WORK_LOCATION = {
-  id: 'work',
+  id: "work",
   type: "work",
   name: "Work",
   icon: "/icons/work.svg",
@@ -406,7 +406,8 @@ const ABOUT_LOCATION = {
       description: [
         "Hey, I’m Ansul 👋 — a full-stack developer who likes building the whole thing, front to back, and then wiring up the DevOps so it actually runs without catching fire.",
         "On the frontend, I’m all about smooth interactions and layouts that don’t fight you. On the backend, I enjoy spinning up APIs that behave themselves.",
-        "And when it comes to DevOps, I somehow became the person who sets up pipelines, automation, and deployments… mostly because it's fun watching everything click into place.",        "I like clean code, fast sites, and projects that don’t need a rescue mission later. Off the clock, you’ll usually find me testing random tools, redesigning something at 1AM, or buying yet another gadget that I absolutely swear is essential 😅",
+        "And when it comes to DevOps, I somehow became the person who sets up pipelines, automation, and deployments… mostly because it's fun watching everything click into place.",
+        "I like clean code, fast sites, and projects that don’t need a rescue mission later. Off the clock, you’ll usually find me testing random tools, redesigning something at 1AM, or buying yet another gadget that I absolutely swear is essential 😅",
       ],
     },
   ],
