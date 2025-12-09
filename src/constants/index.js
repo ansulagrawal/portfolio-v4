@@ -164,7 +164,7 @@ const WORK_LOCATION = {
           subtitle: "OTA Update System for Robotics — RedAnt Technologies",
           tech: [
             "Python",
-            "Fastify",
+            "FastAPI",
             "React",
             "Keycloak",
             "Grafana",
@@ -177,7 +177,7 @@ const WORK_LOCATION = {
           },
           description: [
             "Engineering an OTA (Over-the-Air) update system for robots developed at RedAnt Technologies, enabling remote firmware and software rollout across field units.",
-            "Implemented core backend services using Fastify with Python modules for update packaging, validation, and delivery workflows tailored for robotic hardware constraints.",
+            "Implemented core backend services using FastAPI with Python modules for update packaging, validation, and delivery workflows tailored for robotic hardware constraints.",
             "Designed secure authentication and role-based access control using Keycloak to protect device communication and management interfaces.",
             "Building the control dashboard with React to manage robot update jobs, rollout stages, and live device status.",
             "Integrated Grafana to visualize telemetry, update progress, and system health in real time.",
@@ -406,8 +406,7 @@ const ABOUT_LOCATION = {
       description: [
         "Hey, I’m Ansul 👋 — a full-stack developer who likes building the whole thing, front to back, and then wiring up the DevOps so it actually runs without catching fire.",
         "On the frontend, I’m all about smooth interactions and layouts that don’t fight you. On the backend, I enjoy spinning up APIs that behave themselves.",
-        "And when it comes to DevOps, I somehow became the person who sets up pipelines, automation's, and deployments… mostly because it’s fun watching everything click into place.",
-        "I like clean code, fast sites, and projects that don’t need a rescue mission later. Off the clock, you’ll usually find me testing random tools, redesigning something at 1AM, or buying yet another gadget that I absolutely swear is essential 😅",
+        "And when it comes to DevOps, I somehow became the person who sets up pipelines, automation, and deployments… mostly because it's fun watching everything click into place.",        "I like clean code, fast sites, and projects that don’t need a rescue mission later. Off the clock, you’ll usually find me testing random tools, redesigning something at 1AM, or buying yet another gadget that I absolutely swear is essential 😅",
       ],
     },
   ],

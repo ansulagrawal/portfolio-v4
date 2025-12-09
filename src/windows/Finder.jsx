@@ -67,6 +67,8 @@ function Finder() {
               key={item.id}
               className={item.position}
               onClick={() => openItem(item)}
+              role="button"
+              tabIndex={0}
             >
               <img src={item.icon} alt={item.name} />
               <p>{item.name}</p>

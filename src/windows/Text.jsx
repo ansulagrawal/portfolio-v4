@@ -49,7 +49,7 @@ function Text() {
         <div className="flex flex-col md:flex-row items-center gap-6 pb-3 border-b border-gray-200">
           {image && (
             <div className="relative group">
-              <div className="absolute inset-0 bg-linear-to-br from-blue-400 to-indigo-500 rounded-full blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-linear-to-br from-blue-400 to-indigo-500 rounded-full blur-lg opacity-20 group-hover:opacity-30 transition-opacity duration-300" />
               <img
                 src={image}
                 alt={name}
