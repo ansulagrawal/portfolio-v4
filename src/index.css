@@ -350,7 +350,7 @@ body {
     }
   }
 
-  #txtfile {
+  #txtFile {
     @apply w-md absolute top-36 right-32 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
 
     h2 {
@@ -358,7 +358,7 @@ body {
     }
   }
 
-  #imgfile {
+  #imgFile {
     @apply w-xl absolute top-40 left-2/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
 
     #window-header {
@@ -371,7 +371,7 @@ body {
       @apply p-2 bg-gray-200 max-h-[70vh];
 
       img {
-        @apply w-full h-fit object-contain object-center;
+        @apply max-w-full h-fit object-contain object-center mx-auto;
       }
     }
   }

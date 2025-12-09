@@ -5,9 +5,13 @@ import Dock from "@components/Dock";
 import Navbar from "@components/Navbar";
 import Welcome from "@components/Welcome";
 
+import Contact from "@windows/Contact";
+import Finder from "@windows/Finder";
+import ImageViewer from "@windows/Image";
 import Resume from "@windows/Resume";
 import Safari from "@windows/Safari";
 import Terminal from "@windows/Terminal";
+import TextViewer from "@windows/Text";
 
 gsap.registerPlugin(Draggable);
 
@@ -22,6 +26,10 @@ function App() {
       <Terminal />
       <Safari />
       <Resume />
+      <Finder />
+      <TextViewer />
+      <ImageViewer />
+      <Contact />
     </main>
   );
 }
