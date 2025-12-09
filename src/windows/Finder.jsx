@@ -5,7 +5,6 @@ import useLocationStore from "@store/location";
 import useWindowStore from "@store/window";
 import clsx from "clsx";
 import { Search } from "lucide-react";
-import React from "react";
 
 function Finder() {
   const { openWindow } = useWindowStore();
