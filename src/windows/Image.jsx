@@ -3,13 +3,17 @@ import WindowWrapper from "@hoc/WindowWrapper";
 import useWindowStore from "@store/window";
 import { Edit, Plus, Upload } from "lucide-react";
 
+import { useState } from "react";
+
 function Image() {
   const { windows } = useWindowStore();
   const data = windows?.imgFile?.data;
+  const [hasError, setHasError] = useState(false);
 
   if (!data) return null;
 
   const { name, imageUrl } = data;
+  const showImage = Boolean(imageUrl) && !hasError;
 
   return (
     <>
@@ -24,17 +28,14 @@ function Image() {
       </div>
 
       <div className="preview">
-        {imageUrl ? (
+        {showImage ? (
           <img
             src={imageUrl}
             alt={name}
-            onError={(e) => {
-              e.target.style.display = "none";
-              e.target.parentElement.innerHTML = "<p>Failed to load image</p>";
-            }}
+            onError={() => setHasError(true)}
           />
         ) : (
-          <p>No image available</p>
+          <p>{hasError ? "Failed to load image" : "No image available"}</p>
         )}
       </div>
     </>
