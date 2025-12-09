@@ -4,7 +4,7 @@ import useWindowStore from "@store/window";
 
 function Chip({ children }) {
   return (
-    <span className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-gradient-to-r from-blue-50 to-indigo-50 text-indigo-700 border border-indigo-200 mr-2 mb-2 shadow-sm hover:shadow-md transition-shadow duration-200">
+    <span className="inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-linear-to-r from-blue-50 to-indigo-50 text-indigo-700 border border-indigo-200 mr-2 mb-2 shadow-sm hover:shadow-md transition-shadow duration-200">
       {children}
     </span>
   );
@@ -12,7 +12,7 @@ function Chip({ children }) {
 
 function Metric({ label, value }) {
   return (
-    <div className="flex flex-col items-center px-4 py-3 border border-gray-200 rounded-xl bg-gradient-to-br from-white to-gray-50 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 min-w-[100px]">
+    <div className="flex flex-col items-center px-4 py-3 border border-gray-200 rounded-xl bg-linear-to-br from-white to-gray-50 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5 min-w-[100px]">
       <span className="text-xs font-medium text-gray-500 uppercase tracking-wide mb-1">
         {label}
       </span>
@@ -118,8 +118,8 @@ function Text() {
               Key Metrics
             </h4>
             <div className="flex flex-wrap gap-3 items-center justify-center">
-              {metrics.map((m, i) => (
-                <Metric key={i} label={m.label} value={m.value} />
+              {metrics.map((m) => (
+                <Metric key={m.label} label={m.label} value={m.value} />
               ))}
             </div>
           </div>

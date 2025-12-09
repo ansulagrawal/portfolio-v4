@@ -18,6 +18,8 @@ function Finder() {
     if (["fig", "url"].includes(item.fileType) && item.href)
       return window.open(item.href, "_blank");
 
+    if (!item.kind || item.kind.length === 0) return;
+
     openWindow(
       `${item.fileType}${item.kind[0].toUpperCase() + item.kind.slice(1)}`,
       item
