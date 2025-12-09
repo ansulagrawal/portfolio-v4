@@ -140,7 +140,7 @@ const blogPosts = [
 ];
 
 const WORK_LOCATION = {
-  id: 1,
+  id: 'work',
   type: "work",
   name: "Work",
   icon: "/icons/work.svg",
