@@ -89,7 +89,7 @@ function Dock() {
                 src={`/images/${icon}`}
                 alt={alt}
                 loading="lazy"
-                className={canOpen ? "" : "opacity-60"}
+                className={canOpen ? "" : "opacity-60 cursor-not-allowed"}
               />
             </button>
           </div>
