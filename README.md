@@ -51,7 +51,7 @@ npm run build
 npm run preview
 ```
 
-Default dev server: http://localhost:5173
+Default dev server: <http://localhost:5173>
 
 ## Project structure (high level)
 
