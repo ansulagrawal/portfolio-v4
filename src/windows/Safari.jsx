@@ -35,7 +35,7 @@ function Safari() {
             <input
               type="text"
               placeholder="Search or enter website name"
-              className="flex-1"
+              className="flex-1 text-sm outline-none bg-transparent"
             />
           </div>
         </div>
@@ -50,21 +50,27 @@ function Safari() {
         <h2>My Blogs</h2>
 
         <div className="space-y-8">
-          {blogPosts.map(({ id, date, title, image, link }) => (
-            <div className="blog-post" key={id}>
-              <div className="col-span-2">
-                <img src={image} alt={title} />
-              </div>
+          {blogPosts.length > 0 ? (
+            blogPosts.map(({ id, date, title, image, link }) => (
+              <div className="blog-post" key={id}>
+                <div className="col-span-2">
+                  <img src={image} alt={title} />
+                </div>
 
-              <div className="content">
-                <p>{date}</p>
-                <h3>{title}</h3>
-                <a href={link} target="_blank" rel="noopener noreferrer">
-                  Check out the full post <MoveRight className="icon-hover" />
-                </a>
+                <div className="content">
+                  <p>{date}</p>
+                  <h3>{title}</h3>
+                  <a href={link} target="_blank" rel="noopener noreferrer">
+                    Check out the full post <MoveRight className="icon-hover" />
+                  </a>
+                </div>
               </div>
-            </div>
-          ))}
+            ))
+          ) : (
+            <p className="text-lg text-neutral-500 text-center">
+              No posts found
+            </p>
+          )}
         </div>
       </div>
     </>
