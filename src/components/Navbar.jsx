@@ -28,19 +28,24 @@ const Navbar = () => {
           <ul>
             {navIcons.map(({ id, img }) => (
               <li key={id}>
-                <img src={img} alt={`icon-${id}`} className="icon-hover" />
+                <img src={img} alt={`icon-${id}`} className="icon-hover icon" />
               </li>
             ))}
           </ul>
-          <time>{dayjs().format("ddd MMM D h:mm A")}</time>
+          <time dateTime={dayjs().toISOString()}>{dayjs().format("ddd MMM D h:mm A")}</time>
         </div>
       </nav>
       <section
         id="mobile-navbar"
         className="flex justify-between items-center py-3 px-5 gap-5 sm:hidden relative z-10000"
       >
-        <time>{dayjs().format("h:mm A")}</time>
-        <div className="bg-black flex-1 rounded-full px-2 py-5" />
+        <time dateTime={dayjs().toISOString()}>{dayjs().format("h:mm A")}</time>
+        {/* Visual spacer element to create space between time and icons */}
+        <span
+          role="presentation"
+          aria-hidden="true"
+          className="bg-black flex-1 rounded-full px-2 py-5"
+        />
 
         <ul className="flex items-center gap-2">
           <li>
