@@ -35,7 +35,7 @@ function Safari() {
             <input
               type="text"
               placeholder="Search or enter website name"
-              className="flex-1 text-sm outline-none bg-transparent"
+              className="flex-1 text-sm"
             />
           </div>
         </div>
