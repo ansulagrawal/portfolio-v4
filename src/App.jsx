@@ -4,6 +4,7 @@ import { Draggable } from "gsap/Draggable";
 import Dock from "@components/Dock";
 import Navbar from "@components/Navbar";
 import Welcome from "@components/Welcome";
+import Home from "@components/Home";
 
 import Contact from "@windows/Contact";
 import Finder from "@windows/Finder";
@@ -21,6 +22,7 @@ function App() {
       <Navbar />
       <Welcome />
       <Dock />
+      <Home />
 
       {/* Windows */}
       <Terminal />
