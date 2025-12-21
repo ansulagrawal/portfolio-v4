@@ -31,12 +31,13 @@ function Resume() {
         <div className="flex gap-3">
           {numPages > 1 && (
             <div className="flex gap-1 mr-3">
-            
               <MoveLeft
                 className="icon"
                 onClick={() => pageNo !== 1 && setPageNo((p) => p - 1)}
               />
-              <p>{pageNo}/{numPages}</p>
+              <p>
+                {pageNo}/{numPages}
+              </p>
               <MoveRight
                 className="icon"
                 onClick={() => pageNo < numPages && setPageNo((p) => p + 1)}

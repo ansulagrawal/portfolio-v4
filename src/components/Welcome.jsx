@@ -91,7 +91,10 @@ function Welcome() {
       </h1>
 
       <div className="small-screen">
-        <p>This Portfolio is designed for desktop/tablet screen only</p>
+        <p>
+          This portfolio is designed for desktop and tablet screens only. The
+          mobile version is currently under development.
+        </p>
       </div>
     </section>
   );
