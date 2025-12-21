@@ -59,6 +59,7 @@ const dockApps = [
     icon: "photos.png",
     alt: "photos",
     canOpen: false,
+    mobileHidden: true,
   },
   {
     id: "contact",
@@ -80,6 +81,7 @@ const dockApps = [
     icon: "trash.png",
     alt: "trash",
     canOpen: false,
+    mobileHidden: true,
   },
 ];
 

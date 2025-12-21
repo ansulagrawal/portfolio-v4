@@ -1,6 +1,7 @@
 import { dockApps } from "@constants";
 import { useGSAP } from "@gsap/react";
 import useWindowStore from "@store/window";
+import clsx from "clsx";
 import gsap from "gsap";
 import { useRef } from "react";
 import { Tooltip } from "react-tooltip";
@@ -74,8 +75,14 @@ function Dock() {
   return (
     <section id="dock">
       <div className="dock-container" ref={dockRef}>
-        {dockApps.map(({ id, name, icon, canOpen, alt }) => (
-          <div key={id} className="relative flex justify-center">
+        {dockApps.map(({ id, name, icon, canOpen, alt, mobileHidden }) => (
+          <div
+            key={id}
+            className={clsx(
+              mobileHidden && "max-sm:hidden",
+              "relative flex justify-center"
+            )}
+          >
             <button
               type="button"
               className="dock-icon"

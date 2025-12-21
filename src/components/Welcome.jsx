@@ -89,13 +89,6 @@ function Welcome() {
           "max-sm:text-7xl text-9xl italic font-georama"
         )}
       </h1>
-
-      <div className="small-screen">
-        <p>
-          This portfolio is designed for desktop and tablet screens only. The
-          mobile version is currently under development.
-        </p>
-      </div>
     </section>
   );
 }
